@@ -68,14 +68,42 @@
                                     <constraint firstAttribute="width" constant="36" id="lWD-zX-wnt"/>
                                 </constraints>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1t5-I2-XMh">
+                                <rect key="frame" x="0.0" y="43" width="375" height="524"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnh-ts-RPL">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HMy-eL-amJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="1t5-I2-XMh" firstAttribute="leading" secondItem="0OR-mP-G9l" secondAttribute="leading" id="Yzh-Sz-Z1E"/>
+                            <constraint firstAttribute="trailing" secondItem="1t5-I2-XMh" secondAttribute="trailing" id="iFr-Tc-qf5"/>
+                            <constraint firstItem="1t5-I2-XMh" firstAttribute="top" secondItem="5dd-pb-jlm" secondAttribute="bottom" constant="20" id="ihg-c9-9Ce"/>
                             <constraint firstItem="5dd-pb-jlm" firstAttribute="top" secondItem="0OR-mP-G9l" secondAttribute="top" constant="12" id="l61-am-sKY"/>
                             <constraint firstItem="5dd-pb-jlm" firstAttribute="centerX" secondItem="0OR-mP-G9l" secondAttribute="centerX" id="nOk-lV-Y4P"/>
+                            <constraint firstAttribute="bottom" secondItem="1t5-I2-XMh" secondAttribute="bottom" id="sdM-Y1-8x1"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="567"/>
+                    <connections>
+                        <outlet property="bottomSheetGuideImageView" destination="5dd-pb-jlm" id="d9x-3v-kvc"/>
+                        <outlet property="collectionView" destination="1t5-I2-XMh" id="0FI-x2-BAk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Nf-XD-08W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

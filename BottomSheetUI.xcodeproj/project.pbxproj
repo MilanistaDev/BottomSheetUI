@@ -11,6 +11,8 @@
 		192493C721AE78E500C24958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192493C521AE78E500C24958 /* Main.storyboard */; };
 		192493C921AE78E700C24958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192493C821AE78E700C24958 /* Assets.xcassets */; };
 		192493CC21AE78E700C24958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192493CA21AE78E700C24958 /* LaunchScreen.storyboard */; };
+		198AAFC621B12D09007459A3 /* AdBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198AAFC421B12D09007459A3 /* AdBannerCollectionViewCell.swift */; };
+		198AAFC721B12D09007459A3 /* AdBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 198AAFC521B12D09007459A3 /* AdBannerCollectionViewCell.xib */; };
 		19B3648321B0D50E00EE2CC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3648221B0D50E00EE2CC9 /* MainViewController.swift */; };
 		19B3648521B0E1E400EE2CC9 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3648421B0E1E400EE2CC9 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
@@ -22,6 +24,8 @@
 		192493C821AE78E700C24958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192493CB21AE78E700C24958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		192493CD21AE78E800C24958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198AAFC421B12D09007459A3 /* AdBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		198AAFC521B12D09007459A3 /* AdBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdBannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		19B3648221B0D50E00EE2CC9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		19B3648421B0E1E400EE2CC9 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +67,8 @@
 				192493C821AE78E700C24958 /* Assets.xcassets */,
 				192493CA21AE78E700C24958 /* LaunchScreen.storyboard */,
 				192493CD21AE78E800C24958 /* Info.plist */,
+				198AAFC421B12D09007459A3 /* AdBannerCollectionViewCell.swift */,
+				198AAFC521B12D09007459A3 /* AdBannerCollectionViewCell.xib */,
 			);
 			path = BottomSheetUI;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				192493CC21AE78E700C24958 /* LaunchScreen.storyboard in Resources */,
+				198AAFC721B12D09007459A3 /* AdBannerCollectionViewCell.xib in Resources */,
 				192493C921AE78E700C24958 /* Assets.xcassets in Resources */,
 				192493C721AE78E500C24958 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +147,7 @@
 			files = (
 				19B3648521B0E1E400EE2CC9 /* SubViewController.swift in Sources */,
 				192493C221AE78E500C24958 /* AppDelegate.swift in Sources */,
+				198AAFC621B12D09007459A3 /* AdBannerCollectionViewCell.swift in Sources */,
 				19B3648321B0D50E00EE2CC9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
