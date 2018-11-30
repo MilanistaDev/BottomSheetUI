@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var bottomSheetFirstHeight: NSLayoutConstraint!
