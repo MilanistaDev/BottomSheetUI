@@ -24,10 +24,22 @@
                                 <color key="textColor" red="0.30267238619999998" green="0.66678375010000002" blue="0.65887558459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGn-aN-8Bt">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="du3-bb-luw"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="WTW-Ph-9os" kind="embed" id="tuU-cN-sTn"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tGn-aN-8Bt" secondAttribute="bottom" id="FNw-2N-jFd"/>
+                            <constraint firstItem="tGn-aN-8Bt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cLK-3q-mGm"/>
                             <constraint firstItem="dLj-hK-6cI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jaJ-yJ-RMw"/>
+                            <constraint firstItem="tGn-aN-8Bt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oo9-FA-F50"/>
                             <constraint firstItem="dLj-hK-6cI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="pfr-Hz-BRv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -35,6 +47,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+        <!--Sub View Controller-->
+        <scene sceneID="hbH-ZO-aDz">
+            <objects>
+                <viewController id="WTW-Ph-9os" customClass="SubViewController" customModule="BottomSheetUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0OR-mP-G9l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="567"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Nf-XD-08W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="72"/>
         </scene>
     </scenes>
 </document>
