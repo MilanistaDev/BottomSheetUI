@@ -10,8 +10,11 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var bottomSheetFirstHeight: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.bottomSheetFirstHeight.constant = (UIApplication.shared.statusBarFrame.size.height > 20) ? 98.0 : 64.0
     }
 }
