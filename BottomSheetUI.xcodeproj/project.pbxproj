@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		192493C221AE78E500C24958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192493C121AE78E500C24958 /* AppDelegate.swift */; };
-		192493C421AE78E500C24958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192493C321AE78E500C24958 /* ViewController.swift */; };
 		192493C721AE78E500C24958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192493C521AE78E500C24958 /* Main.storyboard */; };
 		192493C921AE78E700C24958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192493C821AE78E700C24958 /* Assets.xcassets */; };
 		192493CC21AE78E700C24958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192493CA21AE78E700C24958 /* LaunchScreen.storyboard */; };
+		19B3648321B0D50E00EE2CC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3648221B0D50E00EE2CC9 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		192493BE21AE78E500C24958 /* BottomSheetUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BottomSheetUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		192493C121AE78E500C24958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		192493C321AE78E500C24958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		192493C621AE78E500C24958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		192493C821AE78E700C24958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192493CB21AE78E700C24958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		192493CD21AE78E800C24958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B3648221B0D50E00EE2CC9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				192493C121AE78E500C24958 /* AppDelegate.swift */,
-				192493C321AE78E500C24958 /* ViewController.swift */,
+				19B3648221B0D50E00EE2CC9 /* MainViewController.swift */,
 				192493C521AE78E500C24958 /* Main.storyboard */,
 				192493C821AE78E700C24958 /* Assets.xcassets */,
 				192493CA21AE78E700C24958 /* LaunchScreen.storyboard */,
@@ -135,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				192493C421AE78E500C24958 /* ViewController.swift in Sources */,
 				192493C221AE78E500C24958 /* AppDelegate.swift in Sources */,
+				19B3648321B0D50E00EE2CC9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,15 +282,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M7ZGYSAKB;
 				INFOPLIST_FILE = BottomSheetUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ASTK.BottomSheetUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,15 +303,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M7ZGYSAKB;
 				INFOPLIST_FILE = BottomSheetUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ASTK.BottomSheetUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
