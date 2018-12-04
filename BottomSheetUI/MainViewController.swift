@@ -10,7 +10,7 @@ import UIKit
 
 final class MainViewController: UIViewController {
 
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var containeeView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +19,13 @@ final class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? SubViewController {
             vc.bottomSheetDelegate = self
-            vc.parentView = self.containerView
+            vc.parentView = self.containeeView
         }
     }
 }
 
 extension MainViewController: BottomSheetDelegate {
     func updateBottomSheet(frame: CGRect) {
-        self.containerView.frame = frame
+        self.containeeView.frame = frame
     }
 }

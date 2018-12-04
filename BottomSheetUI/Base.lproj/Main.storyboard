@@ -49,7 +49,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="tGn-aN-8Bt" id="9fb-JL-Qyk"/>
+                        <outlet property="containeeView" destination="tGn-aN-8Bt" id="qsA-Q1-zuA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
