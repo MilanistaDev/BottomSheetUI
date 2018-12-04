@@ -33,6 +33,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="tGn-aN-8Bt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="21i-fV-kr4"/>
                             <constraint firstAttribute="bottom" secondItem="tGn-aN-8Bt" secondAttribute="bottom" id="FNw-2N-jFd"/>
                             <constraint firstItem="tGn-aN-8Bt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cLK-3q-mGm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tGn-aN-8Bt" secondAttribute="top" constant="64" id="ekJ-4O-Sp3"/>
@@ -41,6 +42,11 @@
                             <constraint firstItem="dLj-hK-6cI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="pfr-Hz-BRv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="21i-fV-kr4"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="containerView" destination="tGn-aN-8Bt" id="9fb-JL-Qyk"/>
