@@ -163,9 +163,3 @@ extension MainViewController {
     }
     
 }
-
-extension MainViewController: BottomSheetDelegate {
-    func updateBottomSheet(frame: CGRect) {
-        self.containeeView.frame = frame
-    }
-}
