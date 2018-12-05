@@ -26,9 +26,6 @@
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGn-aN-8Bt">
                                 <rect key="frame" x="0.0" y="603" width="375" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="du3-bb-luw"/>
-                                </constraints>
                                 <connections>
                                     <segue destination="WTW-Ph-9os" kind="embed" id="tuU-cN-sTn"/>
                                 </connections>
@@ -36,17 +33,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="tGn-aN-8Bt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="21i-fV-kr4"/>
                             <constraint firstAttribute="bottom" secondItem="tGn-aN-8Bt" secondAttribute="bottom" id="FNw-2N-jFd"/>
                             <constraint firstItem="tGn-aN-8Bt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cLK-3q-mGm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tGn-aN-8Bt" secondAttribute="top" constant="64" id="ekJ-4O-Sp3"/>
                             <constraint firstItem="dLj-hK-6cI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jaJ-yJ-RMw"/>
                             <constraint firstItem="tGn-aN-8Bt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oo9-FA-F50"/>
                             <constraint firstItem="dLj-hK-6cI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="pfr-Hz-BRv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="21i-fV-kr4"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="bottomSheetFirstHeight" destination="du3-bb-luw" id="Ok3-Wl-VpG"/>
-                        <outlet property="containerView" destination="tGn-aN-8Bt" id="9fb-JL-Qyk"/>
+                        <outlet property="containeeTopToSafeAreaTopConstraint" destination="21i-fV-kr4" id="hrb-D4-gcZ"/>
+                        <outlet property="containeeView" destination="tGn-aN-8Bt" id="qsA-Q1-zuA"/>
+                        <outlet property="safeAreaBottomToContaineeTopConstraint" destination="ekJ-4O-Sp3" id="A1R-Qx-7iQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,6 +103,7 @@
                             <constraint firstItem="5dd-pb-jlm" firstAttribute="centerX" secondItem="0OR-mP-G9l" secondAttribute="centerX" id="nOk-lV-Y4P"/>
                             <constraint firstAttribute="bottom" secondItem="1t5-I2-XMh" secondAttribute="bottom" id="sdM-Y1-8x1"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="pdQ-Kd-CcZ"/>
                     </view>
                     <size key="freeformSize" width="375" height="567"/>
                     <connections>
