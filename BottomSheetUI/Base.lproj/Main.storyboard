@@ -49,7 +49,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="containeeTopToSafeAreaTopConstraint" destination="21i-fV-kr4" id="hrb-D4-gcZ"/>
                         <outlet property="containeeView" destination="tGn-aN-8Bt" id="qsA-Q1-zuA"/>
+                        <outlet property="safeAreaBottomToContaineeTopConstraint" destination="ekJ-4O-Sp3" id="A1R-Qx-7iQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
